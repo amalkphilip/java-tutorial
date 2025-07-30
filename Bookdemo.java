@@ -26,8 +26,8 @@ class Book{
 
 public class BookDemo {
 	public static void main(String[] args) {
-		Book bo1 = new Book("Harry Potter","J K Rowling",1000,8);
-		Book bo2 = new Book("Wings Of Fire","Tui .T. Sutherland",1000,8);
+		Book bo1 = new Book("Harry Potter","J K Rowling",1200,4);
+		Book bo2 = new Book("Wings Of Fire","Tui .T. Sutherland",750,8);
 		bo1.displayDetails();
 		System.out.println(" ");
 		bo2.displayDetails();
