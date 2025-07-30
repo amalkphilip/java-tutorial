@@ -19,7 +19,7 @@ class Book{
 		System.out.println("Author of the Book :"+author);
 		System.out.println("Price for the Book :"+price+" INR");
 		System.out.println("Books remaining :"+remain);
-		System.out.println("Total price of the Book :"+total+" INR");
+		System.out.println("Total value of the Books :"+total+" INR");
 	
 	}
 }
