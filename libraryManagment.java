@@ -23,11 +23,13 @@ class Library{
 		System.out.println("TITLE OF THE BOOK :"+title);
 		System.out.println("AUTHOR OF THE BOOK  :"+author);
 		System.out.println("ID OF THE BOOK :"+bookID);
-		System.out.println(counter+"th BOOK");
+		System.out.println("TOTAL BOOK PRESENT IN LIBRARY :"+counter);
+		System.out.println("\n");
 	}
-	public boolean displayInfo(boolean LIBRARY_NAME){
-		if(LIBRARY_NAME==true) {
-		System.out.println("LIBRARY NAME - "+LIBRARY_NAME);
+	public boolean displayInfo(boolean showlibrary){
+		if(showlibrary) {
+			displayInfo();
+			System.out.println("LIBRARY NAME - "+LIBRARY_NAME);
 		
 		}
 		return false;
