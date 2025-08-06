@@ -3,7 +3,7 @@ import java.util.Scanner;
 class PaymentGateway{
 	
 	public void makePayment(int cardNumber,String expiryDate,int cvv) {
-		System.out.println("Credit Card Payment was SUCCESFULLY from "+cardNumber);
+		System.out.println("Credit Card Payment was SUCCESFUL from "+cardNumber);
 	}
 	
 	public void makePayment(String upid) {
