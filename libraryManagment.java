@@ -1,4 +1,4 @@
-package java_tutorial;
+
 
 class Library{
 	String title;
@@ -7,8 +7,8 @@ class Library{
 	final int bookID;
 	static final  String LIBRARY_NAME ="CENTRAL LIBRARY";
 	Library(){
-		this.title="UNDECLARED";
-		this.author="UNDEFINED";
+		title="UNDECLARED";
+		author="UNDEFINED";
 		counter++;
 		this.bookID=counter;
 	}
@@ -25,10 +25,28 @@ class Library{
 		System.out.println("ID OF THE BOOK :"+bookID);
 		System.out.println(counter+"th BOOK");
 	}
+	public boolean displayInfo(boolean LIBRARY_NAME){
+		if(LIBRARY_NAME==true) {
+		System.out.println("LIBRARY NAME - "+LIBRARY_NAME);
+		
+		}
+		return false;
+	}
 	
 }
 
 
 public class libraryManagement {
-
+	public static void main(String[] args) {
+		Library lb1 = new Library();
+		Library lb2 = new Library("title","author");
+		Library lb3 = new Library();
+		lb1.displayInfo();
+		lb1.displayInfo(false);
+		lb2.displayInfo();
+		lb2.displayInfo(true);
+		lb3.displayInfo();
+		lb3.displayInfo(false);
+		
+	}
 }
