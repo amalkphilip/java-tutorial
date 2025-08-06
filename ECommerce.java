@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class PaymentGateway{
 	
-	public void makePayment(String cardNumber,String expiryDate,String cvv) {
+	public void makePayment(int cardNumber,String expiryDate,int cvv) {
 		System.out.println("Credit Card Payment was SUCCESFULLY from "+cardNumber);
 	}
 	
@@ -22,6 +22,38 @@ public class ECommerce {
 		System.out.println("1 .CREDIT CARD.");
 		System.out.println("2 .UPI METHOD.");
 		System.out.println("3 .CASH ON DELIVERY.");
+		int choice = sc.nextInt();
+		switch (choice) {
+		case 1:{
+			System.out.println("Enter the Card number :");
+			int cardNumber = sc.nextInt();
+			System.out.println("Enter the Expiry Date :");
+			String expiryDate = sc.nextLine();
+			sc.nextLine();
+			System.out.println("Enter the CVV Code :");
+			int cvv = sc.nextInt();
+			pgw.makePayment(cardNumber, expiryDate, cvv);
+			break;
+		}
+		case 2:{
+			System.out.println("Enter the UPI number :");
+			String upi = sc.nextLine();
+			sc.nextLine();
+			pgw.makePayment(upi);
+			break;
+		}
+		case 3:{
+			System.out.println("Enter the Amount :");
+			Double amount = sc.nextDouble();
+			pgw.makePayment(amount);
+			break;
+		}
+		default :{
+			System.out.println("Invalid");
+		}
+		
+		}
+		sc.close();
 		
 	}
 }
